@@ -1,0 +1,133 @@
+body {
+  overflow-x: hidden;
+}
+/* Price Range Container */
+.price-range {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Heading */
+.price-range h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Label Style */
+.price-range label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input Fields */
+.price-range input[type="number"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.price-range input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Price Range Text */
+.price-range p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Centering and Styling the Price Range Text */
+.price-range .text-center {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+
+.bg-blue {
+ background-color: #f9f9f9;;
+  max-height: 100vh; /* Keeps the height under control */
+  padding: 20px;
+  position: sticky; /* Sticky effect to keep the category filter visible */
+  top: 120px; 
+}
+
+.product-card-container {
+  padding: 20px;
+}
+
+.product-card-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card-container .col-md-6, 
+.product-card-container .col-sm-4 {
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #e9e7e7;
+  border-radius: 5px;
+  
+}
+
+.btn {
+    margin-top: 20px;
+    align-items: center;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: #000; /* Default text color */
+  }
+  .row .product-card{
+    background-color:rgb(253, 254, 255);
+  }
+  
+  .btn:disabled {
+    background-color: #e0e0e0; /* Disabled background */
+    border-color: #b0b0b0; /* Disabled border */
+    color: #a0a0a0; /* Disabled text */
+    cursor: not-allowed; /* Not-allowed cursor */
+  }
+
+  @media (min-width: 768px) {
+    .button-59 {
+      min-width: 170px;
+    }
+  }
+  

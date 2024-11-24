@@ -1,0 +1,127 @@
+/* Spinner styles */
+.spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+.productDetail {
+    display: flex; /* Use flexbox for layout */
+    border-radius: 8px;
+    padding: 20px;
+    border-bottom: 2px solid #ebebeb; /* Black solid border with 2px width */
+}
+
+.productImageContainer {
+    flex: 1; /* Allow image container to grow */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: top; /* Center the image vertically */
+    margin-top: 150px;
+}
+
+
+
+.productDetailsContainer {
+    flex: 1; /* Allow details container to grow */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    padding-top: 200px; /* Add padding for spacing */
+}
+
+.productTitle {
+    
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.productDescription {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Button styles */
+.btn {
+    margin-top: 20px;
+    align-items: center;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -0.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: #000; /* Default text color */
+}
+
+.btn:disabled {
+    background-color: #e0e0e0; /* Disabled background */
+    border-color: #b0b0b0; /* Disabled border */
+    color: #a0a0a0; /* Disabled text */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
+
+
+/* Inside ProductDetail.module.css */
+.averageRatingContainer {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.averageRatingContainer span {
+  color: gold; /* Color for the stars */
+  font-size: 20px;
+}
+
+.productDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+@media (min-width: 768px) {
+    .btn {
+        min-width: 170px; /* Minimum width for larger screens */
+    }
+}
